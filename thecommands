@@ -1,3 +1,7 @@
+~~~Resource Links~~~
+MS Documentation Page for Minecraft Bedrock: https://docs.microsoft.com/en-us/minecraft/creator/
+
+
 ==Simple fill command==
 /fill <x,y,z> <x,y,z> <block>
 
@@ -46,6 +50,59 @@ execute <playername> ~~~ fill ~30 ~10 ~30 ~~~ air
 
 ===Execute command block: Create blocks arround you===
 execute <playername> ~~~ fill ~30 ~10 ~30 ~~~ <block>
+
+Lightning Snowball: 
+
+
+/execute @e[type=snowball] ~ ~ ~ summon lightning_bolt
+
+
+TNT Arrow: 
+
+
+/execute @e[type=arrow] ~ ~ ~ summon tnt
+
+
+Mob Dialog:
+
+
+/execute @e[type=pig] ~ ~ ~ testfor @p[r=3]
+
+
+/execute @e[type=pig] ~ ~ ~ say Hello
+
+
+Conveyr Belt:
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ magenta_glazed_terracotta 2 tp @s ~ ~ ~0.4
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ magenta_glazed_terracotta 3 tp @s ~ ~ ~-0.4
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ magenta_glazed_terracotta 4 tp @s ~0.4 ~ ~
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ magenta_glazed_terracotta 5 tp @s ~-0.4 ~ ~
+
+
+BLOCK EFFECTS: 
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ wool 0 effect @s speed 3 9 true
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ wool 15 effect @s blindness 2 3 true
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ wool 5 effect @s nausea 5 255 true
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ wool 3 effect @s jump_boost 2 10 true
+
+
+/execute @e ~ ~ ~ detect ~ ~-1 ~ wool 14 kill @s
 
 
 *****All Mob Events*****
